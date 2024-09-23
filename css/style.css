@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: hsl(216, 12%, 8%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rate */
+
+.wrapper .rate-container,
+.thankyou-container {
+    background-color: hsl(213, 19%, 18%);
+    width: 25%;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Overpass';
+}
+
+.wrapper .rate-container .star-img img {
+    background-color: hsla(217, 12%, 63%, 0.186);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.wrapper .rate-container .star-img {
+    padding-bottom: 10px;
+}
+
+.wrapper .rate-container h2 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.wrapper .rate-container p {
+    color: hsl(217, 12%, 63%);
+    padding-bottom: 10px;
+}
+
+.wrapper .rate-container .rating {
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .rate-container .rating .rate-btn {
+    color: hsl(217, 12%, 63%);
+    background-color: hsla(217, 12%, 63%, 0.186);
+    border: none;
+    padding: 8px 13px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: 'Overpass';
+    transition: 0.7s all;
+}
+
+.wrapper .rate-container .rating .rate-btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+}
+
+.wrapper .rate-container .submit {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.wrapper .rate-container .submit-btn {
+    font-family: 'Overpass';
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.7s all;
+}
+
+.wrapper .rate-container .submit-btn:hover {
+    background-color: white;
+}
+
+/* Thank You */
+
+.wrapper .thankyou-container .thankyou-img {
+    text-align: center;
+    padding: 15px;
+}
+
+.wrapper .thankyou-container .rate-text {
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(217, 12%, 63%, 0.186);
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.wrapper .thankyou-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.wrapper .thankyou-container h2 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper .thankyou-container .gray-text {
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+
+@media (max-width: 1200px) {
+    .wrapper .rate-container,
+    .thankyou-container {
+        width: 35%;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper .rate-container,
+    .thankyou-container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 870px) {
+    .wrapper .rate-container,
+    .thankyou-container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 660px) {
+    .wrapper .rate-container,
+    .thankyou-container {
+        width: 55%;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper .rate-container,
+    .thankyou-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper .rate-container,
+    .thankyou-container {
+        width: 80%;
+    }
+}
